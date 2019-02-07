@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/master.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Sparta Global Registration</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark  purple-background">
+      <div class="navbar-left">
+        <img src="images/sparta-global-logo-white.svg" width="120" height="80" class="d-inline-block align-top" alt="">
+      </div>
+      <div class="navbar-right">
+        <p>Welcome to Sparta Global</p>
+      </div>
+    </nav>
+    <div class="main-content">
+      <h1>Sparta Global Registration Form</h1>
+      <form class="needs-validation" novalidate action="./registration_complete">
+        <div class="form-row">
+          <div class="form-group">
+            <br>
+            <label for="inputFirstName">First Name *</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            <div class="invalid-feedback">
+              Please enter your first name.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputLastName">Last Name *</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+            <div class="invalid-feedback">
+              Please enter your last name.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputAge">Age *</label>
+            <input type="number" class="form-control" placeholder="Enter Age" required>
+            <div class="invalid-feedback">
+              Please enter your age.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group date">
+            <label for="dob">Date Of Birth</label> <br>
+            <input type="date" name="dob" required>
+          </div>
+        </div>
+        <p>Gender: *</p>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+          <label class="custom-control-label" for="customRadioInline1">Male</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+          <label class="custom-control-label" for="customRadioInline2">Female</label>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <br>
+            <label for="inputDegree">Degree *</label>
+            <input type="text" class="form-control" placeholder="Enter Degree" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputUni">University</label>
+            <select id="inputUni" class="form-control" required>
+              <option selected>Choose</option>
+              <option>University of Oxford</option>
+              <option>University of Cambridge</option>
+              <option>University of Sheffield</option>
+              <option>University of Roehampton</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress">Address *</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter an address.
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="inputCity">City *</label>
+            <input type="text" class="form-control" id="inputCity" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputCounty">County</label>
+            <select id="inputCounty" class="form-control" required>
+              <option selected>Choose</option>
+              <option>Buckinghamshire</option>
+              <option>Hertfordshire</option>
+              <option>South Yorkshire</option>
+              <option>Bristol</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="inputPostcode">Postcode *</label>
+            <input type="text" class="form-control" id="inputPostcode" required>
+            <div class="invalid-feedback">
+              Please enter a postcode.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address *</label>
+            <input type="email" class="form-control" id="inputemailaddress" placeholder="name@example.com" required>
+            <div class="invalid-feedback">
+              Please enter an email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Skills</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Phone Number *</label>
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Enter phone number" required>
+            <div class="invalid-feedback">
+              Please enter a phone number.
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">LinkedIn URL</label>
+            <input type="url" class="form-control"  placeholder="Enter LinkedIn  url">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="uploadCV">Upload a CV</label>
+            <br>
+            <input type="file" name="cv">
+          </div>
+        </div>
+        <div class="form-row">
+          <p>Stream: *</p>
+        </div>
+        <div class="form-row">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="streamRadioInline1" name="streamRadioInline1" class="custom-control-input" required>
+            <label class="custom-control-label" for="streamRadioInline1">SDET</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="streamRadioInline2" name="streamRadioInline1" class="custom-control-input" required>
+            <label class="custom-control-label" for="streamRadioInline2">DevOps</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <div class="form-check">
+              <br>
+              <input class="form-check-input" type="checkbox" id="terms" required>
+              <label class="form-check-label" for="gridCheck">Agree to terms and conditions *</label><br>
+            </div>
+          </div>
+        </div>
+        <p>Rate your experience of the form</p>
+
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="experienceSlider">
+          <p>Rating: <span id="value_for_slider"></span>/100</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
+  var slider = document.getElementById("experienceSlider");
+  var output = document.getElementById("value_for_slider");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
