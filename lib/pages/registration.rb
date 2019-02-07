@@ -25,6 +25,7 @@ class Registration
   STREAM_RADIO_BUTTON = '/html/body/div/form/div[20]/div[1]'
   TERMS_CHECK_BOX = '//*[@id="terms"]'
   RATING_SLIDER = '//*[@id="experienceSlider"]'
+  SIGN_IN_BUTTON = '/html/body/div/form/button'
 
   def visit_registration_page
     visit(REGISTRATION_PAGE_URL)
@@ -106,9 +107,13 @@ class Registration
     find(:xpath, TERMS_CHECK_BOX).click
   end
 
-  def fill_in_slider(rating)
-    within(:xpath, RATING_SLIDER) do |rating|
-      fill_in 'input', :with => rating
-    end
+  # def fill_in_slider(rating)
+  #   within(:xpath, RATING_SLIDER) do |rating|
+  #     fill_in 'input', :with => rating
+  #   end
+  # end
+
+  def click_sign_in
+    find(:xpath, SIGN_IN_BUTTON).click
   end
 end

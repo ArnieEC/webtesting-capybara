@@ -22,11 +22,12 @@ describe 'testing a correct path for sparta registration' do
       @sparta_demo_site.fill_in_skills('Stuff')
       @sparta_demo_site.fill_in_phone_number('07946118037')
       @sparta_demo_site.fill_in_linkedin('linkedin.com')
-      # @sparta_demo_site.fill_in_cv
+      @sparta_demo_site.fill_in_cv
       @sparta_demo_site.fill_in_stream
       @sparta_demo_site.fill_in_terms
-      @sparta_demo_site.fill_in_slider('9')
-      sleep 5
+      # @sparta_demo_site.fill_in_slider('9')
+      @sparta_demo_site.click_sign_in
+      sleep 50
     end
   end
 end
